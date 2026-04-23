@@ -160,9 +160,9 @@ describe('Worker regression coverage', () => {
     );
 
     expect(unknownPlatform.status).toBe(302);
-    expect(unknownPlatform.headers.get('Location')).toBe('https://github.com/xixu-me/Xget');
+    expect(unknownPlatform.headers.get('Location')).toBe('https://live.bilibili.com/299/');
     expect(barePlatform.status).toBe(302);
-    expect(barePlatform.headers.get('Location')).toBe('https://github.com/xixu-me/Xget');
+    expect(barePlatform.headers.get('Location')).toBe('https://live.bilibili.com/299/');
   });
 
   it('rejects Docker requests that do not use a /cr/ prefix', async () => {
